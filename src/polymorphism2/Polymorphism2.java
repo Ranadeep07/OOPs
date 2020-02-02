@@ -16,7 +16,26 @@ public class Polymorphism2 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        B obj= new B();
+        obj.show();
+        
+    }
+    
+}
+class A  //Method Overriding
+{
+    public void show()
+    {
+        System.out.println("Hello World in A");
+    }
+   
+    
+}
+class B extends A
+{
+    public void show()
+    {
+        System.out.println("Hello World in B");
     }
     
 }
